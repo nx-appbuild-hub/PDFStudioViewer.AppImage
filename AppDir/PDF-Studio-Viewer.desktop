@@ -2,7 +2,7 @@
 Name=PDF Studio Viewer
 Comment=Create, Review and Edit PDF Documents
 Type=Application
-Categories=Viewer;Publishing;
+Categories=Viewer;Publishing;Office;
 Exec=AppRun %U
 Icon=icon
-Keywords=PDF;PDF Viewer;
+MimeType=application/pdf;application/x-bzpdf;application/x-gzpdf;
