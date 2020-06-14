@@ -23,16 +23,22 @@ while [ -h "$prg" ] ; do
   fi
 done
 
+
+app_home=${APPDIR}/opt/pdfstudioviewer2019
+app_config=${HOME}/.config/pdfstudioviewer2019
+ls $app_config || mkdir -p $app_config
+
+ls $app_config/.install4j || \
+  cp -r ${app_home}/.install4j ${app_config}/.install4j
+
+
 prg_dir=`dirname "$prg"`
 progname=`basename "$prg"`
 cd "$prg_dir"
 prg_dir=`pwd`
-app_home=${APPDIR}/opt/pdfstudioviewer2019
-app_config=${HOME}/.config/pdfstudioviewer2019
 cd "$app_home"
 app_home=`pwd`
 bundled_jre_home="$app_home/jre"
-
 
 
 fill_version_numbers() {
