@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=PDF Studio Viewer
+Comment=Create, Review and Edit PDF Documents
+Type=Application
+Categories=Viewer;Publishing;
+Exec=AppRun %U
+Icon=icon
+Keywords=PDF;PDF Viewer;
